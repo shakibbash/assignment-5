@@ -25,15 +25,13 @@ for (let i = 0; i < allBtn.length; i++) {
 
     alert(`
         Board Updated Successfully 
-        Now Task Remain : ${taskAssigned} 
-        Total Completed task : ${completedTask} `);
+     `);
 
     if (taskAssigned == 0) {
       alert(`
         Congratulations!!!
         You Have Completed All The Current Task.
-        Your Task Remaining : ${taskAssigned}
-        Total Completed Task : ${completedTask}
+     
         `);
     }
     // Disable Button and Bg color change
