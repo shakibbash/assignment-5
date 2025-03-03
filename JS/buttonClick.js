@@ -25,14 +25,14 @@ for (let i = 0; i < allBtn.length; i++) {
 
     alert(`
         Board Updated Successfully 
-        Now Task Remain : ${taskAssigned} 🤲
-        Total Completed task : ${completedTask} 😃`);
+        Now Task Remain : ${taskAssigned} 
+        Total Completed task : ${completedTask} `);
 
     if (taskAssigned == 0) {
       alert(`
-        Congrats 🥳🥳🥳!!!
+        Congratulations!!!
         You Have Completed All The Current Task.
-        Now Task Remain : ${taskAssigned}
+        Your Task Remaining : ${taskAssigned}
         Total Completed Task : ${completedTask}
         `);
     }
