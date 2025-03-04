@@ -11,13 +11,13 @@ for (let i = 0; i < allBtn.length; i++) {
     let task = parent.querySelector("p").innerText;
     let time = getCurrentTime();
 
-    // Task Assigned minus
+    //  task reduced
     let taskAssigned = document.getElementById("taskAssigned").innerText;
     taskAssigned = parseInt(taskAssigned);
     taskAssigned -= 1;
     document.getElementById("taskAssigned").innerText = taskAssigned;
 
-    // Total Task +
+    // Total Task 
     let completedTask = document.getElementById("completedTask").innerText;
     completedTask = parseInt(completedTask);
     completedTask += 1;
@@ -34,7 +34,8 @@ for (let i = 0; i < allBtn.length; i++) {
      
         `);
     }
-    // Disable Button and Background color change
+
+    // Disable Button and Background colour change
     completeBtn.setAttribute("disabled", "true");
     completeBtn.style.backgroundColor = "rgb(211, 211, 211)";
 
