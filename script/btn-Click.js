@@ -62,18 +62,22 @@ for (let i = 0; i < allBtn.length; i++) {
   });
 }
 
+
+// current time function
 function getCurrentTime() {
   const now = new Date();
+  
   let hours = now.getHours();
-  const minutes = now.getMinutes();
-  const seconds = now.getSeconds();
-  const period = hours >= 12 ? "PM" : "AM";
+  let minutes = now.getMinutes();
+  let seconds = now.getSeconds();
 
-  hours = hours % 12;
-  hours = hours ? hours : 12;
+  const period = (hours >= 12) ? "PM" : "AM";
+  hours = hours % 12 || 12; 
 
-  const formattedMinutes = minutes < 10 ? "0" + minutes : minutes;
-  const formattedSeconds = seconds < 10 ? "0" + seconds : seconds;
 
-  return `${hours}:${formattedMinutes}:${formattedSeconds} ${period}`;
+  if (minutes < 10) minutes = "0" + minutes;
+  if (seconds < 10) seconds = "0" + seconds;
+
+  return hours + ":" + minutes + ":" + seconds + " " + period;
 }
+
