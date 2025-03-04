@@ -34,7 +34,7 @@ for (let i = 0; i < allBtn.length; i++) {
      
         `);
     }
-    // Disable Button and Bg color change
+    // Disable Button and Background color change
     completeBtn.setAttribute("disabled", "true");
     completeBtn.style.backgroundColor = "rgb(211, 211, 211)";
 
