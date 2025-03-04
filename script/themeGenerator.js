@@ -1,8 +1,8 @@
 document.getElementById("themeGenerator").addEventListener("click", function () {
   function getRandomLightColor() {
-    const r = Math.floor(200 + Math.random() * 56);
-    const g = Math.floor(200 + Math.random() * 56);
-    const b = Math.floor(200 + Math.random() * 56);
+    const r = Math.floor(Math.random() * 156) + 100; 
+    const g = Math.floor(Math.random() * 156) + 100;
+    const b = Math.floor(Math.random() * 156) + 100;
     return `rgb(${r}, ${g}, ${b})`;
   }
 
