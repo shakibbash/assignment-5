@@ -1,4 +1,4 @@
-let allBtn = document.querySelectorAll(".btn");
+let allBtn = document.querySelectorAll(".complete-btn");
 
 for (let i = 0; i < allBtn.length; i++) {
   const completeBtn = allBtn[i];
